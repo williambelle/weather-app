@@ -4,5 +4,11 @@ build:
 test:
   - 'jshint'
 
-default:
+serve:
   - 'test'
+  - 'build'
+  - 'connect:build'
+  - 'watch'
+
+default:
+  - 'serve'
