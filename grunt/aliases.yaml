@@ -1,5 +1,6 @@
 build:
   - 'jade'
+  - 'copy:build'
 
 test:
   - 'jshint'
