@@ -1,0 +1,20 @@
+{
+  "name": "weather-app",
+  "version": "0.0.0",
+  "homepage": "https://github.com/williambelle/weather-app",
+  "authors": [
+    "William Belle <william.belle@gmail.com>"
+  ],
+  "private": true,
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "framework7": "~1.0.5"
+  }
+}
