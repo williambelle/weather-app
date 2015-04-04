@@ -5,6 +5,9 @@
     "William Belle <william.belle@gmail.com>"
   ],
   "private": true,
+  "scripts": {
+    "test": "grunt test"
+  },
   "devDependencies": {
     "grunt"                    : "~0.4.0",
     "load-grunt-config"        : "^0.14.0",

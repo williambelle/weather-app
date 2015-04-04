@@ -1,2 +1,5 @@
-default:
+test:
   - 'jshint'
+
+default:
+  - 'test'
