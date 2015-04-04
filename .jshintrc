@@ -1,0 +1,22 @@
+{
+  "browser": true,
+  "bitwise": true,
+  "curly": true,
+  "eqeqeq": true,
+  "forin": true,
+  "noarg": true,
+  "noempty": true,
+  "nonew": true,
+  "undef": true,
+  "unused": false,
+  "strict": true,
+  "globals": {
+    "module"     : true,
+    "require"    : true,
+    "Framework7" : true,
+    "Dom7"       : true
+  },
+  "devel": {
+    "console" : false
+  }
+}

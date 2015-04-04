@@ -1,0 +1,15 @@
+build:
+  - 'jade'
+  - 'copy:build'
+
+test:
+  - 'jshint'
+
+serve:
+  - 'test'
+  - 'build'
+  - 'connect:build'
+  - 'watch'
+
+default:
+  - 'serve'
