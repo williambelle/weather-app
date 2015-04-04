@@ -11,8 +11,10 @@
   "unused": false,
   "strict": true,
   "globals": {
-    "module"  : true,
-    "require" : true
+    "module"     : true,
+    "require"    : true,
+    "Framework7" : true,
+    "Dom7"       : true
   },
   "devel": {
     "console" : false
