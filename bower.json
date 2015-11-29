@@ -15,6 +15,6 @@
     "tests"
   ],
   "dependencies": {
-    "framework7": "~1.0.5"
+    "framework7": "~1.3.5"
   }
 }
