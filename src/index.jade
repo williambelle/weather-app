@@ -6,33 +6,42 @@ html
     meta(name='apple-mobile-web-app-capable', content='yes')
     meta(name="apple-mobile-web-app-status-bar-style", content="black")
     title Weather App
-    link(rel="stylesheet", href="css/framework7.min.css")
+    link(rel="stylesheet", href="css/framework7.material.min.css")
+    link(rel="stylesheet", href="css/framework7.material.colors.min.css")
   body
-    // Status bar overlay for fullscreen mode
-    .statusbar-overlay
-
-    // Panels overlay
     .panel-overlay
-    // Left panel with reveal effect
-    .panel.panel-left.panel-reveal
-      .content-block
-        p Left panel content goes here
+
+    .panel.panel-left.panel-cover
+      .view.navbar-fixed(data-page="panel-left")
+        .pages
+          .page(data-page="panel-left")
+            .navbar
+              .navbar-inner
+                .center Cities
+              .page-content
+                .content-block
+                  p This is a side panel/drawer. 
 
     // Views
     .views
       // Main view, should have "view-main" class
       .view.view-main
-        // Top Navbar
-        .navbar
-          .navbar-inner
-            .left
-              a(href="#").link.icon-only.open-panel
-                i.icon.icon-bars
-            .center.sliding Weather App
-        .pages.navbar-through.toolbar-through
-        // Index Page
-        .page(data-page="index")
-          .page-content
+        .pages.navbar-fixed.toolbar-fixed
+          // Index Page
+          .page(data-page="index")
+            
+            // Top Navbar
+            .navbar
+              .navbar-inner
+                .center Weather App
+                .right
+                  a(href="#").link.icon-only.open-panel
+                    i.icon.icon-bars
+                
+            .page-content
+              a(href="#", class="link, floating-button")
+                i.icon.icon-plus
+        
 
     script(type="text/javascript", src="js/framework7.min.js")
     script(type="text/javascript", src="js/application.js")

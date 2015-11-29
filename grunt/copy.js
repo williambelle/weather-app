@@ -9,7 +9,7 @@ module.exports = {
 		}, {
 			expand : true,
 			cwd : 'bower_components/framework7/dist/',
-			src : [ 'css/framework7.min.css', 'js/framework7.min.js' ],
+			src : [ 'css/framework7.material.min.css', 'css/framework7.material.colors.min.css', 'js/framework7.min.js' ],
 			dest : 'www/'
 		} ]
 	}
