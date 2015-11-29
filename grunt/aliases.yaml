@@ -4,6 +4,7 @@ build:
 
 test:
   - 'jshint'
+  - 'jscs'
 
 serve:
   - 'test'
