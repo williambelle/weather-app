@@ -8,6 +8,18 @@ module.exports = {
       dest: 'www/',
     }, {
       expand: true,
+      cwd: 'build/',
+      src: ['templates/**'],
+      dest: 'www/',
+      nonull: true,
+    }, {
+      expand: true,
+      cwd: 'bower_components/handlebars/',
+      src: ['handlebars.runtime.min.js'],
+      dest: 'www/js',
+      nonull: true,
+    }, {
+      expand: true,
       cwd: 'bower_components/framework7/dist/',
       src: [
         'css/framework7.material.min.css',
@@ -15,6 +27,6 @@ module.exports = {
         'js/framework7.min.js',
       ],
       dest: 'www/',
-    },],
+    }, ],
   },
 };

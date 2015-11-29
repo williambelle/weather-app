@@ -14,7 +14,8 @@
     "module"     : true,
     "require"    : true,
     "Framework7" : true,
-    "Dom7"       : true
+    "Dom7"       : true,
+    "WeatherApp" : true
   },
   "devel": {
     "console" : false

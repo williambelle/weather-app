@@ -1,5 +1,7 @@
 build:
+  - 'test'
   - 'jade'
+  - 'handlebars:build'
   - 'copy:build'
 
 test:
@@ -7,7 +9,6 @@ test:
   - 'jscs'
 
 serve:
-  - 'test'
   - 'build'
   - 'connect:build'
   - 'watch'

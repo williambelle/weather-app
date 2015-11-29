@@ -25,23 +25,13 @@ html
     // Views
     .views
       // Main view, should have "view-main" class
-      .view.view-main
-        .pages.navbar-fixed.toolbar-fixed
-          // Index Page
-          .page(data-page="index")
-            
-            // Top Navbar
-            .navbar
-              .navbar-inner
-                .center Weather App
-                .right
-                  a(href="#").link.icon-only.open-panel
-                    i.icon.icon-bars
-                
-            .page-content
-              a(href="#", class="link, floating-button")
-                i.icon.icon-plus
-        
+      #main-view.view.view-main
 
+    script.
+      var WeatherApp = { };
     script(type="text/javascript", src="js/framework7.min.js")
+    script(type="text/javascript", src="js/handlebars.runtime.min.js")
+    script(type="text/javascript", src="templates/all.js")
+    script(type="text/javascript", src="js/controllers/MainController.js")
+    script(type="text/javascript", src="js/views/MainView.js")
     script(type="text/javascript", src="js/application.js")

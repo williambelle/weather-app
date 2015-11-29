@@ -1,14 +1,21 @@
 (function(Framework7, $$) {
   'use strict';
 
-  // Initialize app
-  var myApp = new Framework7({
-    modalTitle: 'Weather App',
-  });
 
-  // Add view
-  var mainView = myApp.addView('.view-main', {
-    dynamicNavbar: true,
-  });
+  var myApp = {
+    initialize: function() {
+      WeatherApp.App = new Framework7({
+        modalTitle: 'Weather App',
+      });
+      this.render();
+    },
+    render: function() {
+      var mainController = new WeatherApp.MainController();
+      mainController.init();
+    },
+  };
+
+  // Initialize app
+  myApp.initialize();
 
 })(Framework7, Dom7);
