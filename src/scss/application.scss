@@ -1,3 +1,34 @@
 .swiper-container {
   height: 100%;
 }
+
+.popup {
+  .searchbar-input {
+    height: 38px;
+  }
+  .searchbar {
+    height: 100%;
+  }
+  .list-block {
+    margin: 0;
+  }
+  .list-block span {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.54);
+    margin-left: 5px;
+  }
+  .list-block .item-link .item-inner {
+    background: none;
+  }
+  .preloader {
+    position: absolute;
+    right: 40px;
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    margin-top: -12px;
+    opacity: 0.8;
+    pointer-events: none;
+    display: none;
+  }
+}

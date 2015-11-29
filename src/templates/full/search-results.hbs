@@ -1,0 +1,18 @@
+{{#each places}}
+  {{#if admin1}}
+    {{#if admin1.content}}
+      <li class="close-popup">
+        <a href="#" class="item-content item-link">
+          <div class="item-inner">
+            <div class="item-title">
+              {{name}}
+              <span>
+                {{admin1.content}}, {{country.content}}
+              </span>
+            </div>
+          </div>
+        </a>
+      </li>
+    {{/if}}
+  {{/if}}
+{{/each}}

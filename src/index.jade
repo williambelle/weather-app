@@ -5,7 +5,7 @@ html
     meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui")
     meta(name='apple-mobile-web-app-capable', content='yes')
     meta(name="apple-mobile-web-app-status-bar-style", content="black")
-    meta(name="theme-color" content="#ff9800")
+    meta(name="theme-color" content="#03a9f4")
     title Weather App
     link(rel="stylesheet", href="css/framework7.material.min.css")
     link(rel="stylesheet", href="css/framework7.material.colors.min.css")
@@ -29,11 +29,14 @@ html
       // Main view, should have "view-main" class
       #main-view.view.view-main
 
+    #search.popup
+
     script.
       var WeatherApp = { };
     script(type="text/javascript", src="js/framework7.min.js")
     script(type="text/javascript", src="js/handlebars.runtime.min.js")
     script(type="text/javascript", src="templates/all.js")
     script(type="text/javascript", src="js/controllers/MainController.js")
+    script(type="text/javascript", src="js/controllers/SearchController.js")
     script(type="text/javascript", src="js/views/MainView.js")
     script(type="text/javascript", src="js/application.js")
