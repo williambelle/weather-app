@@ -9,7 +9,7 @@ module.exports = {
     }, {
       expand: true,
       cwd: 'build/',
-      src: ['templates/**'],
+      src: ['css/**', 'templates/**'],
       dest: 'www/',
       nonull: true,
     }, {

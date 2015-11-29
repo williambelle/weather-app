@@ -2,6 +2,7 @@ build:
   - 'test'
   - 'jade'
   - 'handlebars:build'
+  - 'sass:build'
   - 'copy:build'
 
 test:

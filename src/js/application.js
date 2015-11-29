@@ -6,6 +6,7 @@
     initialize: function() {
       WeatherApp.App = new Framework7({
         modalTitle: 'Weather App',
+        material: true,
       });
       this.render();
     },
